@@ -4,7 +4,7 @@ Allow you to add additional compliance security around the deletion of s3 object
 Which is super useful for meeting compliance requirements. Object locks
 allow you to set retention modes & a retention period. The mode basically states
 what IAM permissions you require to delete an object. The strongest mode doesn't
-event allow the account root user to delete the object.
+even allow the account root user to delete the object.
 
 Retention period gives the date to which you cannot delete the object. This can
 either be set as a default for the whole bucket or individual objects.
