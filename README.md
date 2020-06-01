@@ -15,3 +15,4 @@ As well as code snippets I have found useful over time.
 
 #### AWS S3
 - [Object Locks](aws/s3/object-locks.md)
+- [Defense in Depth](aws/s3/defense-in-depth.md)
