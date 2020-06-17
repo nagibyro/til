@@ -8,6 +8,9 @@ As well as code snippets I have found useful over time.
 ### Categories
 - [AWS ElastiCache](#aws-elasticache)
 - [AWS S3](#aws-s3)
+- [Browsers](#browsers)
+- [Networking DNS](#networking-dns)
+- [Networking HTTP](#networking-http)
 
 ----
 #### AWS ElastiCache
@@ -16,3 +19,12 @@ As well as code snippets I have found useful over time.
 #### AWS S3
 - [Object Locks](aws/s3/object-locks.md)
 - [Defense in Depth](aws/s3/defense-in-depth.md)
+
+#### Browsers
+- [Network Errors with Cors](browsers/network-errors-with-cors.md)
+
+#### Networking DNS
+- [Propagation Tools](networking/dns/propagation-tools.md)
+
+#### Networking HTTP
+- [eTLD+1](networking/http/etld+1.md)
