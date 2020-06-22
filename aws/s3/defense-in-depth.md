@@ -155,4 +155,9 @@ data "aws_iam_policy_document" "default_policy" {
 }
 ```
 
-**Note** this policy doesn't implement everything from the blog post but is a good start.
+**Note** Terraform these policies don't completely remove the ability for objects in the s3 bucket to be public.
+
+Terraform has a resource specifically for blocking public access:
+
+- Bucket Level: [aws_s3_bucket_public_access_block](https://www.terraform.io/docs/providers/aws/r/s3_bucket_public_access_block.html)
+- Account Level: [aws_s3_account_public_access_block](https://www.terraform.io/docs/providers/aws/r/s3_account_public_access_block.html)
