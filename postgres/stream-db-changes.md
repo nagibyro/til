@@ -1,6 +1,6 @@
 # Stream DB Changes
 One thing that I've really enjoyed with DynamoDB in AWS has been the ability to stream database
-changes and do things on create, update or delete of records. This never seemed to be overly easy this was to do with
+changes and do things on create, update or delete of records. This never seemed to be overly easy to do with
 a traditional RDMS. However with Postgres there is a DB extension called [wal2json](https://github.com/eulerto/wal2json)
 which translates Postgres's [WAL log](https://www.postgresql.org/docs/current/wal-intro.html) to json format that makes
 it easy for apps to consume.
