@@ -6,13 +6,18 @@ As well as code snippets I have found useful over time.
 
 ---
 ### Categories
+- [AWS ECS](#aws-ecs)
 - [AWS ElastiCache](#aws-elasticache)
 - [AWS S3](#aws-s3)
 - [Browsers](#browsers)
 - [Networking DNS](#networking-dns)
 - [Networking HTTP](#networking-http)
+- [Postgres](#postgres)
 
 ----
+#### AWS ECS
+- [Autoscaling with Lambda](aws/ecs/autoscaling-with-lambda.md)
+
 #### AWS ElastiCache
 - [Service Updates and Maintenance Windows](aws/elasticache/service-updates-and-maintenance-windows.md)
 
@@ -28,3 +33,6 @@ As well as code snippets I have found useful over time.
 
 #### Networking HTTP
 - [eTLD+1](networking/http/etld+1.md)
+
+#### Postgres
+- [Stream DB changes](postgres/stream-db-changes.md)
