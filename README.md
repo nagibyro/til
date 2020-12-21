@@ -10,6 +10,7 @@ As well as code snippets I have found useful over time.
 - [AWS ElastiCache](#aws-elasticache)
 - [AWS S3](#aws-s3)
 - [Browsers](#browsers)
+- [Datastructures and Algorithms](#datastructures-and-algorithms)
 - [Networking DNS](#networking-dns)
 - [Networking HTTP](#networking-http)
 - [Postgres](#postgres)
@@ -27,6 +28,9 @@ As well as code snippets I have found useful over time.
 
 #### Browsers
 - [Network Errors with Cors](browsers/network-errors-with-cors.md)
+
+#### Datastructures and Algorithms
+- [linked List loop detection](dsa/linked-list/loop-detection.md)
 
 #### Networking DNS
 - [Propagation Tools](networking/dns/propagation-tools.md)
