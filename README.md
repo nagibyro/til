@@ -13,6 +13,7 @@ As well as code snippets I have found useful over time.
 - [Datastructures and Algorithms](#datastructures-and-algorithms)
 - [Networking DNS](#networking-dns)
 - [Networking HTTP](#networking-http)
+- [Ngnix](#nginx)
 - [Postgres](#postgres)
 
 ----
@@ -37,6 +38,9 @@ As well as code snippets I have found useful over time.
 
 #### Networking HTTP
 - [eTLD+1](networking/http/etld+1.md)
+
+#### Nginx
+- [Proxy Pass Https and Static Config](nginx/proxy-pass-https-and-static-config.md)
 
 #### Postgres
 - [Stream DB changes](postgres/stream-db-changes.md)
