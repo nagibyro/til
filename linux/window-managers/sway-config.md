@@ -1,5 +1,5 @@
 # Sway Config
-When using the [sway](https://wiki.archlinux.org/title/Sway) as your desktop window
+When using [sway](https://wiki.archlinux.org/title/Sway) as your desktop window
 manager; the configuration file provided in `/etc/sway/config` is meant as an
 example file. While following config examples mentions setting config values in
 `~/.config/sway/config`. However this config file is **not** a user override of
