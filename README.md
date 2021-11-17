@@ -11,6 +11,7 @@ As well as code snippets I have found useful over time.
 - [AWS S3](#aws-s3)
 - [Browsers](#browsers)
 - [Datastructures and Algorithms](#datastructures-and-algorithms)
+- [Linux](#linux)
 - [Networking DNS](#networking-dns)
 - [Networking HTTP](#networking-http)
 - [Ngnix](#nginx)
@@ -33,6 +34,9 @@ As well as code snippets I have found useful over time.
 #### Datastructures and Algorithms
 - [linked List loop detection](dsa/linked-list/loop-detection.md)
 
+#### Linux
+- [Sway Config](linux/window-managers/sway-config.md)
+
 #### Networking DNS
 - [Propagation Tools](networking/dns/propagation-tools.md)
 
@@ -45,3 +49,4 @@ As well as code snippets I have found useful over time.
 #### Postgres
 - [Stream DB changes](postgres/stream-db-changes.md)
 - [pg_isready](postgres/pg_isready.md)
+
