@@ -8,9 +8,9 @@ It does not merge the values instead it is a complete replacement of the config.
 
 A close inspection of the [configuration](https://wiki.archlinux.org/title/Sway#Configuration)
 section of the arch wiki mentions copying the *example* config. I was used to
-home files modifying or overriding `/etc` files not replacing them.
+home files modifying or extending `/etc` configuration not being a replacement.
 
-Launching sway with an empty config or a one line config results in a grey
+Launching sway with an empty config or incomplete config results in a grey
 screen of death. Logs are also non-obvious because technically nothing went
 wrong, thats just what sway looks like without anything configured. TIL.
 
