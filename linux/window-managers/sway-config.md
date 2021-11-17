@@ -4,7 +4,7 @@ manager a configuration file is provided in `/etc/sway/config`.
 
 Many tutorials mention placing settings in `~/.config/sway/config`. Which I did thinking they would be
 merged with the global configuration in `/etc/sway/config`. However this config file
-is **not** a user override of global configuartion! It is a complete replacement of the config.
+is **not** a user modification of the global configuartion! It is a complete replacement of the config.
 
 Launching sway with an empty config or incomplete config results in a grey
 screen of death on login where you can't launch apps or interact with the
