@@ -27,7 +27,13 @@ function wait_for_db {
 
 which works fine but this can be simplified for postgres using the `pg_isready` utility which
 is a part of the postgres cli utilities for most distros. Adding this to my above script increases readability --
-making it clearer what the line is doing.  
+making it clearer what the line is doing.
+
+
+:rotating_light: Warning: `pg_isready` only checks for TCP connection
+readiness. Important note most of the Docker containers for postgres start,
+create a new user & database then **restart** so `pg_isready` is not a great tool
+for handling a case where you need to wait for your DB to ready in say an integration test suite
 
 ```bash
 function wait_for_db {
