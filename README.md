@@ -11,6 +11,7 @@ As well as code snippets I have found useful over time.
 - [AWS S3](#aws-s3)
 - [Browsers](#browsers)
 - [Datastructures and Algorithms](#datastructures-and-algorithms)
+- [Git](#git)
 - [Linux](#linux)
 - [Networking DNS](#networking-dns)
 - [Networking HTTP](#networking-http)
@@ -34,6 +35,9 @@ As well as code snippets I have found useful over time.
 #### Datastructures and Algorithms
 - [linked List loop detection](dsa/linked-list/loop-detection.md)
 
+#### Git
+- [Git Ignore Relative Path](git/git-ignore-relative.md)
+
 #### Linux
 - [Sway Config](linux/window-managers/sway-config.md)
 
@@ -49,4 +53,3 @@ As well as code snippets I have found useful over time.
 #### Postgres
 - [Stream DB changes](postgres/stream-db-changes.md)
 - [pg_isready](postgres/pg_isready.md)
-
