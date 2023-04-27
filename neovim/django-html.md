@@ -1,6 +1,5 @@
 # Django Html
-I've have been working on a django project and ran into the situation where
-I needed to be working on django templates. Which have the `.html` extension.
+I've have been working on a django project and ran into the situation where I needed to be working on django templates. Which have the `.html` extension.
 Neovim would set filetype for HTML files but working with django html files
 are actually a superset of html and jinja templating (or something jinja
 like not sure if it's actually considered jinja or not). 
@@ -39,3 +38,16 @@ While this works because of my specific work conditions. It could be
 endlessly iterated on to be more generic perhaps looking through the filesystem
 to try and identify a django project or whatever. For now this works
 well for me and is simple addition to my project.
+
+## LSP Config
+This is great for syntax highlighting. This also means the html LSP
+server will not launch since it doesn't regonize the filetype. You need to add configuration to 
+your lspconfig setup to get it to launch.
+
+```lua
+lspconfig.html.setup({
+  filetypes = { "html", "htmldjango" },
+})
+```
+
+This makes sure you still get html lsp settings with your django templates.
