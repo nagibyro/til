@@ -15,6 +15,7 @@ As well as code snippets I have found useful over time.
 - [Linux](#linux)
 - [Networking DNS](#networking-dns)
 - [Networking HTTP](#networking-http)
+- [Neovim](#neovim)
 - [Ngnix](#nginx)
 - [Postgres](#postgres)
 
@@ -46,6 +47,9 @@ As well as code snippets I have found useful over time.
 
 #### Networking HTTP
 - [eTLD+1](networking/http/etld+1.md)
+
+#### Neovim
+- [Django HTML](neovim/django-html.md)
 
 #### Nginx
 - [Proxy Pass Https and Static Config](nginx/proxy-pass-https-and-static-config.md)
