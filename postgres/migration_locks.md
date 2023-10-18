@@ -1,7 +1,7 @@
 # Migration Locks
 DB migrations on a heavily used DB is one of the leading causes of outages for
-my team in th last year. This is usually from a migration acquiring a lock. 
-Migration almost always acquire some form of lock on the table they are
+my team in the last year. This is usually from a migration acquiring a lock. 
+Migrations almost always acquire some form of lock on the table they are
 modifying. This is important to understand because I didn't have a strong
 mental model for how these locks can interact with other concurrent
 transactions.
@@ -15,10 +15,10 @@ null default.
 
 The reason for this is because while the migration tries to acquire it's lock.
 It also stops other transactions (other background process or web requests)
-from working on table its trying to modify. But if you have other processes
-with long running transactions the migration will not be able to run but it'll
-prevent other things from running while it waits. So in my experince migrations
-cause outages for two main reasons:
+from working on table its trying to modify. However, if you have other processes
+which have long running transactions, then the migration will not be able to run and it will
+prevent other processes from running while it waits on the long running transaction to complete. 
+In my experince migrations cause outages for two main reasons:
 
 1. The migration runs acquires a lock and it has a lot of work to do, rewriting
    an index or writing data to a new column etc...
@@ -26,21 +26,28 @@ cause outages for two main reasons:
    transaction and all other work gets stuck behind the migration waiting
    for it while the migration waits on something slow.
 
-The second reason is really just a side effect of the evil of long running
+The second reason is a side effect of the evil of long running
 transactions. In general you want to keep transactions short and sweet.
 
 ## Mitigations
-It's generally a good idea that in your migration transaction to `SET lock_timeout to '3s';`
+It's generally a good idea that you set in your migrations transaction `SET lock_timeout to '3s';`
 this makes sure your migration doesn't wait forever to get its lock and will
-fail instead of holding up all the work indefinitely. It's also a good idea to
-`SET statement_timeout to '6s';` to make sure that if the transaction turns out
-to be slow (because of reason 1) that your outage will only be a small blip
+fail instead of holding up all the work indefinitely (preventing problem 2 from
+above). It's also a good idea to `SET statement_timeout to '6s';` to make sure that if the 
+transaction turns out to be slow (because of reason 1) that your outage will only be a small blip
 instead of multiple minutes or longer. These two settings are simple and will save you a lot
 of pain with in your migrations.
 
+**NOTE** If you are expecting your migration to take a long time or have a
+dedicated maintenance window (people still have those?) then feel free to no
+sue the `SET` statements above. However the above should be the default and
+long migrations should be considered an exception you should have to opt into.
+
 ## Bonus See what is locked
-“Knowing where the trap is—that's the first step in evading it.” To check what's
-locking tables and if the transaction has been running for a long time you
+“Knowing where the trap is—that's the first step in evading it.” -- Leto
+Atreides
+
+To check what's locking tables and if the transaction has been running for a long time you
 can run:
 
 ```sql
