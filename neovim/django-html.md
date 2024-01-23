@@ -39,6 +39,15 @@ endlessly iterated on to be more generic perhaps looking through the filesystem
 to try and identify a django project or whatever. For now this works
 well for me and is simple addition to my project.
 
+### Update 1-19-2024
+The above configuration would end up using htmldjango for any python project.
+Which is not what I want. Luckily in neovim 0.9 they made the using [exrc](https://neovim.io/doc/user/options.html#'exrc')
+safe. Exrc allows you to put a `.nvim.lua` file at the root of your project and it'll be executed
+after you main neovim config has loaded. This lets you add project specific
+neovim configuration. Therefore I can move this into that file and it won't
+mess with other pythong projects. (If you do alot or exclusivily django then you may want to keep
+it in the global config so you don't have to copy pase every project).
+
 ## LSP Config
 This is great for syntax highlighting. This also means the html LSP
 server will not launch since it doesn't regonize the filetype. You need to add configuration to 

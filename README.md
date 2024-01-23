@@ -50,6 +50,7 @@ As well as code snippets I have found useful over time.
 
 #### Neovim
 - [Django HTML](neovim/django-html.md)
+- [LSP Config Settings](neovim/lsp-config-settings.md)
 
 #### Nginx
 - [Proxy Pass Https and Static Config](nginx/proxy-pass-https-and-static-config.md)
