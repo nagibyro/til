@@ -1,5 +1,5 @@
-# Highligh Groups
-I was having an issue in neovim that when my cursor went onto a parenthesis or
+# Highlight Groups
+I was having an issue in neovim, when my cursor went onto a parenthesis or
 bracket it would seem to disappear and jump to the corresponding
 closing paren. However the cursor had not really jumped and if I continued off
 the paren my cursor would seem to reappear. This was incredibly disorienting to
@@ -9,7 +9,7 @@ standard plugin (Also referred to as matchparen.vim). With this plugin when you 
 it'll highlight them. 
 
 **NOTE**: I actually am using [sentiment.nvim](https://github.com/utilyre/sentiment.nvim)
-which is a dropin replacement for the builitn Matchparen plugin)
+which is a dropin replacement for the builitn Matchparen plugin
 
 This is where I learned about Highlight Groups in Vim. Basically a highlight
 group represents a set of things that should be highlighted together. For the
