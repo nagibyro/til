@@ -33,7 +33,7 @@ lspconfig.pyright.setup({
 In the above example we are configuring two different python LSP's but why do
 we need to set the `extraPaths` option in `init_options` for jedi but we can
 set it in the `settings` option for pyright? This comes down to implementation
-details of the underlying LSP Server. If you read the lspconfig documentation]() you'll find 
+details of the underlying LSP Server. If you read the lspconfig documentation](https://github.com/neovim/nvim-lspconfig?tab=readme-ov-file#nvim-lspconfig) you'll find 
 
 > The `settings` table is sent in `on_init` via a
   `workspace/didChangeConfiguration` notification from the Nvim client to
@@ -58,9 +58,9 @@ language, but some lsp's simply have not done the work to implement the event. I
 has not implemented the **workspace/didChangeConfiguration** [event](https://github.com/pappasam/jedi-language-server/blob/dff0f122f06e8ce3b5ade55f039dec951057edbd/jedi_language_server/server.py#L629).
 Jedi accepts the event but it does nothing with it (not even a log message).
 Whereas pyright does implement the [event](https://github.com/microsoft/pyright/blob/cfb1de0cc4117095752d0c0c9ba1193402f971a6/packages/pyright-internal/src/languageServerBase.ts#L794)
-This can be confusing, It shows understanding who lsp client
-interacts with the underlying server as well at the capabilities of the lsp
-servers you are using.
+This can be confusing, It shows that understanding how lsp clients (like neovim)
+interact with the underlying server and what the capabilities of the lsp
+servers you are using can be important.
 
 A quick side note. If you are not using the lspconfig plugin and are trying to
 use the lsp client direcly from the neovim api the `settings` value is used
