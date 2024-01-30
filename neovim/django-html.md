@@ -45,7 +45,7 @@ Which is not what I want. Luckily in neovim 0.9 they made the using [exrc](https
 safe. Exrc allows you to put a `.nvim.lua` file at the root of your project and it'll be executed
 after you main neovim config has loaded. This lets you add project specific
 neovim configuration. Therefore I can move this into that file and it won't
-mess with other pythong projects. (If you do alot or exclusivily django then you may want to keep
+mess with other python projects. (If you do alot or exclusivily django then you may want to keep
 it in the global config so you don't have to copy pase every project).
 
 ## LSP Config
