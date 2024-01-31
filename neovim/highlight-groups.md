@@ -47,7 +47,6 @@ vim.api.nvim_set_hl(0, 'MatchParen', {
   bold=true,
   fg="#f44336",
   bg="Grey",
-  cterm="bold"
 })
 
 ```
