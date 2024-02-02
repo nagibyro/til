@@ -10,10 +10,12 @@ us it also didn't auto recover because the traffic would keep thrashing each con
 
 However if you don't use rolling deployment type so you use code deploy instead then the AWS docs say:
 
-If a task is marked unhealthy, the service scheduler will first start a replacement task. If the replacement task has a
+> If a task is marked unhealthy, the service scheduler will first start a replacement task. If the replacement task has a
 health status of HEALTHY, the service scheduler stops the unhealthy task. If the replacement task has a health status
 of UNHEALTHY, the scheduler will stop either the unhealthy replacement task or the existing unhealthy task to get the
-total task count to equal desiredCount. Which combined with ALB's failing open aka continue to route running traffic to
+total task count to equal `desiredCount`. 
+
+Which combined with ALB's failing open aka continue to route running traffic to
 unhealthy target hosts gives the chance for the system to recover from a traffic spike. I also believe because the
 hosts are killed any metrics that might trigger AWS Autoscaling get interrupted and so Autoscaling policies usually
 fail to kick in to increase the number of hosts. (If you're using something like CPU Utilization or memory as your

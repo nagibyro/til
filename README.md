@@ -22,6 +22,7 @@ As well as code snippets I have found useful over time.
 ----
 #### AWS ECS
 - [Autoscaling with Lambda](aws/ecs/autoscaling-with-lambda.md)
+- [How Deployment Type impacts Unhealthy host handling](aws/ecs/how-deployment-type-impacts-unhealthy-container-handling.md)
 
 #### AWS ElastiCache
 - [Service Updates and Maintenance Windows](aws/elasticache/service-updates-and-maintenance-windows.md)

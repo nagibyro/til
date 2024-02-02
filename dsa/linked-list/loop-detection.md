@@ -3,7 +3,7 @@ This isn't a defintion of how to find a loop in a linked list.You can find plent
 Instead this is a explination of why one of the techniques work better than others.
 
 ## Bankground / Context
-I implemented a loop detector that returned the node that the loop started with [here](https://gist.github.com/Nilithus/eaac46e538e599bcfd965d6007061e17)
+I implemented a loop detector that returned the node that the loop started with [here](https://gist.github.com/nagibyro/eaac46e538e599bcfd965d6007061e17)
 but I found out that it was slower than most other implementations but I didn't understand why. Basically my
 implementation cycled through to find the loop; which gave me the total loop length -- but not the starting node.
 Then to figure out where the loop started I reset to the start of the list with both pointers and then for each 
