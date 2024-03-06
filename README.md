@@ -53,11 +53,13 @@ As well as code snippets I have found useful over time.
 - [Django HTML](neovim/django-html.md)
 - [LSP Config Settings](neovim/lsp-config-settings.md)
 - [Highlight Groups](neovim/highlight-groups.md)
+- [Surround Spacing](neovim/surround-spacing.md)
 
 #### Nginx
 - [Proxy Pass Https and Static Config](nginx/proxy-pass-https-and-static-config.md)
 
 #### Postgres
+- [DDL Changes With Read Replicas](postgres/ddl_changes_with_read_replicas.md)
 - [Stream DB changes](postgres/stream-db-changes.md)
 - [pg_isready](postgres/pg_isready.md)
 - [Migration Locks](postgres/migration_locks.md)
