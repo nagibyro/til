@@ -13,9 +13,8 @@ If you run with cursor on the word `foo`
 - `ysiw[` -> `[ foo ]`
 - `ysiw]` -> `[foo]`
 
-
 This behavior is there for compatability with the `vim-surround` plugin. It's
-possible to diable this [entirely](https://github.com/kylechui/nvim-surround/issues/264)
+possible to disable this [entirely](https://github.com/kylechui/nvim-surround/issues/264)
 but if you are still learning the keys like me then it's probably better to
 just learn the semantics. While this behavior doesn't feel obvious it is
 documented in `:h nvim-surround.default_pairs`
