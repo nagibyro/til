@@ -13,7 +13,7 @@ replica. Since the work that has happened in the WAL has already happened on
 the primary replica's MUST apply the changes. In this case replica's have
 configuration options `max_standby_archive_delay` and
 `max_standby_streaming_delay` that define how long a read replica will wait for
-queries to complete before apply the WAL. (In our RDS instance this was
+queries to complete before applying the WAL. (In our RDS instance this was
 defaulted to 14 seconds).
 
 Once that WAL delay time has expired the read replica will cancel running queries
